@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sestetle</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the necessary javascript -->
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/rita"></script>
+    <script language="javascript" src="grammar.js"></script>
+
+    <script language="javascript" src="main.js"></script>
+  </head>
+  <body onload="generatePoem();">
+    <h1>Sestetle</h1>
+    <table id="table" class="center"></table>
+    <button onclick="generatePoem();" style="display:block; margin: 20px auto;">Another Poem</button>
+  </body>
+</html>
