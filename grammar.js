@@ -1,17 +1,15 @@
 var rules = {
-    start: "$ver1 | $ver2",
-    test: "(dog).rhymes",
-    totallyRandom: ".noun() .noun() .noun() .noun() .noun() .noun()",
-    ver1: "$adverbs $topic .verb() $topic .adverb()",
-    ver2: "$adverbs .adjective() .pluralNoun() .verb() $preps .noun()",
+    start: "$ver1 | $ver2 | $ver3",
+    ver1: "$adverbs $topic $actions $topic .adverb()",
+    ver2: "$adverbs .adjective() .pluralNoun() $actions $preps .noun()",
+    ver3: ".noun() .noun() .noun() $actions .noun() .noun()",
     preps: "ofthe | tothe | inthe | bythe",
     adverbs: "ifall | every | ifany",
-    $topic: ".noun()"
+    $topic: ".noun()",
+    actions: ".pastVerb() | .presentVerb() | .participleVerb()"
   };
   
-  // var img_rules = {
-  //     start: "<img src&#61;'https:&#47;&#47;cdn.glitch.global&#47;a1dd8819-792d-4b02-8660-157921ed34ce&#47;(1|2|3|4).jpg'>"
-  // };
+
   // Tips for modifying RiTa grammars:
   // Add these to the end of a rule or a phrase
   // .art() 	adds the correct article according to the phonemes

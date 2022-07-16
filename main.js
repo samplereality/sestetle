@@ -2,11 +2,14 @@
 
 let context = {
     noun: () => RiTa.randomWord({ pos: "nn", minLength: 5, maxLength: 5 }),
-    verb: () => RiTa.randomWord({ pos: "vbd", minLength: 5, maxLength: 5 }),
+    pastVerb: () => RiTa.randomWord({ pos: "vbd", minLength: 5, maxLength: 5 }),
+    presentVerb: () => RiTa.randomWord({ pos: "vb", minLength: 5, maxLength: 5 }),
+    participleVerb: () => RiTa.randomWord({ pos: "vbn", minLength: 5, maxLength: 5 }),
     pluralNoun: () => RiTa.randomWord({ pos: "nns", minLength: 5, maxLength: 5  }),
     adjective: () => RiTa.randomWord({ pos: "jj", minLength: 5, maxLength: 5  }),
     adverb: () => RiTa.randomWord({ pos: "rb", minLength: 5, maxLength: 5  }),
   };
+  
 
 let rg = RiTa.grammar(rules, context); // load our  main grammar
    
@@ -14,13 +17,19 @@ let rg = RiTa.grammar(rules, context); // load our  main grammar
   function generatePoem() {
     let result = rg.expand();
     const words = result.split(" ");
-      console.log(words);
-      writeWords(words);
+    writeWords(words);
   }
 
   function writeWords(_arr) {
+
+    if (_arr) {
+        console.log("All good");
+    } else {
+        generatePoem();
+    }
     
       let answer = _arr[5]
+      
       let str = "";
       for (let i = 0; i < _arr.length; i++) {
           str += "<tr>";
@@ -90,7 +99,6 @@ let rg = RiTa.grammar(rules, context); // load our  main grammar
       }
   
       document.getElementById("table").innerHTML = str;
-    //   console.log(str);
   }
   
   writeWords(words);
