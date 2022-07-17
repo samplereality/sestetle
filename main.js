@@ -25,12 +25,6 @@ function darkMode() {
   }
 
   function writeWords(_arr) {
-
-    if (_arr) {
-        console.log("All good");
-    } else {
-        generatePoem();
-    }
     
       let answer = _arr[5]
       
