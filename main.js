@@ -12,7 +12,11 @@ let context = {
   
 
 let rg = RiTa.grammar(rules, context); // load our  main grammar
-   
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  } 
 
   function generatePoem() {
     let result = rg.expand();

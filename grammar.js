@@ -1,10 +1,10 @@
 var rules = {
     start: "$ver1 | $ver2 | $ver3",
-    ver1: "$adverbs $topic $actions $topic .adverb()",
-    ver2: "$adverbs .adjective() .pluralNoun() $actions $preps .noun()",
-    ver3: ".noun() .noun() .noun() $actions .noun() .noun()",
-    preps: "ofthe | tothe | inthe | bythe",
-    adverbs: "ifall | every | ifany",
+    ver1: ".adjective() $topic $actions $preps $topic .adverb()",
+    ver2: "$stock .adjective() .pluralNoun() $actions $preps .noun()",
+    ver3: ".adjective() .noun() .noun() $actions $preps .noun()",
+    preps: "ofthe | tothe | inthe | bythe | sothe",
+    stock: "ifall | every | ifany | wasnt | could | would | whose",
     $topic: ".noun()",
     actions: ".pastVerb() | .presentVerb() | .participleVerb()"
   };

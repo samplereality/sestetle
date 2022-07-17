@@ -1,12 +1,12 @@
 @font-face { font-family: "nyt-karnakcondensed"; src: url("assets/fonts/karnakcondensed-normal-700.woff2") format("woff2"), url("assets/fonts/karnakcondensed-normal-700.woff") format("woff"); font-style: normal; font-weight: 700; }
 
-body { background: rgb(18, 18, 19); }
+body { background: white
+color:rgb(18, 18, 19)}
 table {
 	border-spacing: 5px;
 }
 
 h1 {
-	color: white;
 	font-size: 44px;
 	text-align: center;
 	font-family: 'nyt-karnakcondensed', sans-serif;
@@ -14,6 +14,7 @@ h1 {
 .word {
 	
 }
+
 .letter {
 	width: 62px;
 	height: 62px;
@@ -22,7 +23,7 @@ h1 {
 	font-weight: 700;
 	font-size: 2rem;
 	color: white;
-	background: rgb(58, 58, 60);
+	background: #3a3a3c;
 }
 .blank {
 	border: 2px solid rgb(58, 58, 60);
@@ -67,3 +68,72 @@ h1 {
 	background-color: black;
 	color: white;
   }
+
+  .dark-mode {
+	background-color: rgb(18, 18, 19);
+	color: white;
+  }
+
+  #SidebarBtn {
+	position: fixed;
+	top: 6px;
+	left: 6px;
+	color: currentColor;
+	font-size: 2em;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+
+#gear {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	/* color: #999;
+	font-size: 2em; */
+	cursor: pointer;
+	transition: 0.3s;
+	color: currentColor;
+}
+
+#gear a {
+    text-decoration: none;
+    color: currentColor;
+}
+#SidebarBtn a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+#SidebarBtn a:hover {
+    color: darkgrey;
+}
+
+#gear a:hover {
+    color: darkgrey;
+}
+#about {
+	/*   width: 75%; */
+	font-size: 1.2rem;
+	margin: auto;
+	line-height: 1.5rem;
+	text-align: left;
+	color: black;
+}
+
+#aboutTitle {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 10px;
+	color: black;	text-align: center;
+	font-family: 'nyt-karnakcondensed', sans-serif;
+}
+
+#aboutDescription {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	text-align: left;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
