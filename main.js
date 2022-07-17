@@ -3,11 +3,14 @@
 let context = {
     noun: () => RiTa.randomWord({ pos: "nn", minLength: 5, maxLength: 5 }),
     pastVerb: () => RiTa.randomWord({ pos: "vbd", minLength: 5, maxLength: 5 }),
-    presentVerb: () => RiTa.randomWord({ pos: "vb", minLength: 5, maxLength: 5 }),
+    presentVerb: () => RiTa.randomWord({ pos: "vbp", minLength: 5, maxLength: 5 }),
     participleVerb: () => RiTa.randomWord({ pos: "vbn", minLength: 5, maxLength: 5 }),
     pluralNoun: () => RiTa.randomWord({ pos: "nns", minLength: 5, maxLength: 5  }),
     adjective: () => RiTa.randomWord({ pos: "jj", minLength: 5, maxLength: 5  }),
     adverb: () => RiTa.randomWord({ pos: "rb", minLength: 5, maxLength: 5  }),
+    subConj: () => RiTa.randomWord({ pos: "in", minLength: 5, maxLength: 5  }),
+    compAdj: () => RiTa.randomWord({ pos: "jjr", minLength: 5, maxLength: 5  }),
+    supAdj: () => RiTa.randomWord({ pos: "jjs", minLength: 5, maxLength: 5  })
   };
   
 
