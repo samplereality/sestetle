@@ -1,6 +1,5 @@
 var rules = {
     start: "$ver1 | $ver2 | $ver3 | $ver4",
-    // start: ".test() .test() .test() .test() .test() .test()",
     ver1: "$adjectives $topic $actions $preps $topic .adverb()",
     ver2: "$stock $adjectives .pluralNoun() $actions $preps .noun()",
     ver3: "$adjectives .noun() .noun() $actions $preps .noun()",
