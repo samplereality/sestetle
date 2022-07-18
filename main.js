@@ -11,6 +11,7 @@ let context = {
     subConj: () => RiTa.randomWord({ pos: "in", minLength: 5, maxLength: 5  }),
     compAdj: () => RiTa.randomWord({ pos: "jjr", minLength: 5, maxLength: 5  }),
     supAdj: () => RiTa.randomWord({ pos: "jjs", minLength: 5, maxLength: 5  })
+    // modal: () => RiTa.randomWord({ pos: "md", minLength: 5, maxLength: 5  })
   };
   
 
