@@ -11,8 +11,9 @@ var rules = {
     stock: "maybe | ifall | every | ifany | wasnt | whose | sothe | these | those | which | where | $modal",
     $topic: ".noun()",
     $mantra: ".noun() | $adjectives",
-    actions: ".pastVerb() | .presentVerb() | .participleVerb()",
+    actions: ".pastVerb() | .presentVerb() | .participleVerb() | $customVerbs",
     adjectives: ".adjective() | .compAdj() | .supAdj()",
     $mantraAdj: ".adjective()",
-    modal: "shall | might | ought | could | would | never"
+    modal: "shall | might | ought | could | would | never",
+    customVerbs: "hates | loves | kills | spies | cries | flies | works | likes | hunts | blows | hides | codes | swims | holds | ousts | lives | sighs"
   };
