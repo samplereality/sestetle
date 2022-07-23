@@ -15,5 +15,5 @@ var rules = {
     adjectives: ".adjective() | .compAdj() | .supAdj()",
     $mantraAdj: ".adjective()",
     modal: "shall | might | ought | could | would | never",
-    customVerbs: "hates | loves | kills | spies | cries | flies | works | likes | hunts | blows | hides | codes | swims | holds | ousts | lives | sighs"
+    customVerbs: "hates | loves | kills | spies | cries | flies | works | likes | hunts | blows | hides | codes | swims | holds | ousts | lives | sighs | sells | makes"
   };
